@@ -1,0 +1,230 @@
+There are 21,989 proteins in 2020.04_UP000000589_10090_Mus_musculus_canonical.fasta
+
+Database: 2020.04_UP000000589_10090_Mus_musculus_canonical.fasta
+Redundant counts:
+   total all peptides: 2,467,386
+   total shared peptides: 191,027
+   total unique peptides: 2,276,359
+   fraction unique: 92.26
+   fraction shared: 7.74
+Non-redundant counts:
+   total all non-redundant peptides: 2,343,477
+   total shared peptides: 67,118
+   total unique peptides: 2,276,359
+   fraction unique: 97.14
+   fraction shared: 2.86
+Some shared peptide data:
+   max copy number: 457 ('jHTGEKPYK', 457)
+   min copy number: 2
+   median copy number: 2.0
+   average copy number: 2.85
+   upper quartile number: 3
+   lower quartile number: 2
+
+There are 21,217 proteins in 2020.04_UP000002356_9940_Ovis_aries_canonical.fasta
+
+Database: 2020.04_UP000002356_9940_Ovis_aries_canonical.fasta
+Redundant counts:
+   total all peptides: 2,361,128
+   total shared peptides: 183,036
+   total unique peptides: 2,178,092
+   fraction unique: 92.25
+   fraction shared: 7.75
+Non-redundant counts:
+   total all non-redundant peptides: 2,253,086
+   total shared peptides: 74,994
+   total unique peptides: 2,178,092
+   fraction unique: 96.67
+   fraction shared: 3.33
+Some shared peptide data:
+   max copy number: 108 ('jHTGEKPYK', 108)
+   min copy number: 2
+   median copy number: 2.0
+   average copy number: 2.44
+   upper quartile number: 2
+   lower quartile number: 2
+
+There are 21,587 proteins in 2020.04_UP000002494_10116_Rattus_norvegicus_canonical.fasta
+
+Database: 2020.04_UP000002494_10116_Rattus_norvegicus_canonical.fasta
+Redundant counts:
+   total all peptides: 2,343,937
+   total shared peptides: 188,760
+   total unique peptides: 2,155,177
+   fraction unique: 91.95
+   fraction shared: 8.05
+Non-redundant counts:
+   total all non-redundant peptides: 2,230,127
+   total shared peptides: 74,950
+   total unique peptides: 2,155,177
+   fraction unique: 96.64
+   fraction shared: 3.36
+Some shared peptide data:
+   max copy number: 197 ('jHTGEKPYK', 197)
+   min copy number: 2
+   median copy number: 2.0
+   average copy number: 2.52
+   upper quartile number: 2
+   lower quartile number: 2
+
+There are 20,600 proteins in 2020.04_UP000005640_9606_Homo_sapiens_canonical.fasta
+
+Database: 2020.04_UP000005640_9606_Homo_sapiens_canonical.fasta
+Redundant counts:
+   total all peptides: 2,443,962
+   total shared peptides: 184,369
+   total unique peptides: 2,259,593
+   fraction unique: 92.46
+   fraction shared: 7.54
+Non-redundant counts:
+   total all non-redundant peptides: 2,327,144
+   total shared peptides: 67,551
+   total unique peptides: 2,259,593
+   fraction unique: 97.1
+   fraction shared: 2.9
+Some shared peptide data:
+   max copy number: 410 ('jHTGEKPYK', 410)
+   min copy number: 2
+   median copy number: 2.0
+   average copy number: 2.73
+   upper quartile number: 3
+   lower quartile number: 2
+
+There are 22,168 proteins in 2020.04_UP000008227_9823_Sus_scrofa_canonical.fasta
+
+Database: 2020.04_UP000008227_9823_Sus_scrofa_canonical.fasta
+Redundant counts:
+   total all peptides: 2,540,158
+   total shared peptides: 366,452
+   total unique peptides: 2,173,706
+   fraction unique: 85.57
+   fraction shared: 14.43
+Non-redundant counts:
+   total all non-redundant peptides: 2,295,149
+   total shared peptides: 121,443
+   total unique peptides: 2,173,706
+   fraction unique: 94.71
+   fraction shared: 5.29
+Some shared peptide data:
+   max copy number: 248 ('jNSKWjK', 248)
+   min copy number: 2
+   median copy number: 2.0
+   average copy number: 3.02
+   upper quartile number: 2
+   lower quartile number: 2
+
+There are 20,866 proteins in 2020.05_UP000002281_9796_Equus_caballus_canonical.fasta
+
+Database: 2020.05_UP000002281_9796_Equus_caballus_canonical.fasta
+Redundant counts:
+   total all peptides: 2,606,669
+   total shared peptides: 260,873
+   total unique peptides: 2,345,796
+   fraction unique: 89.99
+   fraction shared: 10.01
+Non-redundant counts:
+   total all non-redundant peptides: 2,415,809
+   total shared peptides: 70,013
+   total unique peptides: 2,345,796
+   fraction unique: 97.1
+   fraction shared: 2.9
+Some shared peptide data:
+   max copy number: 320 ('DjYNENYK', 320)
+   min copy number: 2
+   median copy number: 2.0
+   average copy number: 3.73
+   upper quartile number: 2
+   lower quartile number: 2
+
+There are 18,446 proteins in 2020.05_UP000005215_43179_Ictidomys_tridecemlineatus_canonical.fasta
+
+Database: 2020.05_UP000005215_43179_Ictidomys_tridecemlineatus_canonical.fasta
+Redundant counts:
+   total all peptides: 2,118,533
+   total shared peptides: 101,077
+   total unique peptides: 2,017,456
+   fraction unique: 95.23
+   fraction shared: 4.77
+Non-redundant counts:
+   total all non-redundant peptides: 2,060,771
+   total shared peptides: 43,315
+   total unique peptides: 2,017,456
+   fraction unique: 97.9
+   fraction shared: 2.1
+Some shared peptide data:
+   max copy number: 105 ('jHTGEKPYK', 105)
+   min copy number: 2
+   median copy number: 2.0
+   average copy number: 2.33
+   upper quartile number: 2
+   lower quartile number: 2
+
+There are 23,846 proteins in 2020.05_UP000009136_9913_Bos_taurus_canonical.fasta
+
+Database: 2020.05_UP000009136_9913_Bos_taurus_canonical.fasta
+Redundant counts:
+   total all peptides: 2,643,254
+   total shared peptides: 560,454
+   total unique peptides: 2,082,800
+   fraction unique: 78.8
+   fraction shared: 21.2
+Non-redundant counts:
+   total all non-redundant peptides: 2,327,616
+   total shared peptides: 244,816
+   total unique peptides: 2,082,800
+   fraction unique: 89.48
+   fraction shared: 10.52
+Some shared peptide data:
+   max copy number: 192 ('SjjMKVK', 192)
+   min copy number: 2
+   median copy number: 2.0
+   average copy number: 2.29
+   upper quartile number: 2
+   lower quartile number: 2
+
+There are 20,469 proteins in 2020.05_UP000189706_10036_Mesocricetus_auratus_canonical.fasta
+
+Database: 2020.05_UP000189706_10036_Mesocricetus_auratus_canonical.fasta
+Redundant counts:
+   total all peptides: 2,375,947
+   total shared peptides: 195,738
+   total unique peptides: 2,180,209
+   fraction unique: 91.76
+   fraction shared: 8.24
+Non-redundant counts:
+   total all non-redundant peptides: 2,269,452
+   total shared peptides: 89,243
+   total unique peptides: 2,180,209
+   fraction unique: 96.07
+   fraction shared: 3.93
+Some shared peptide data:
+   max copy number: 222 ('jHTGEKPYK', 222)
+   min copy number: 2
+   median copy number: 2.0
+   average copy number: 2.19
+   upper quartile number: 2
+   lower quartile number: 2
+
+There are 19,236 proteins in 2020.05_UP000242450_46360_Cervus_elaphus_canonical.fasta
+
+Database: 2020.05_UP000242450_46360_Cervus_elaphus_canonical.fasta
+Redundant counts:
+   total all peptides: 1,493,897
+   total shared peptides: 47,515
+   total unique peptides: 1,446,382
+   fraction unique: 96.82
+   fraction shared: 3.18
+Non-redundant counts:
+   total all non-redundant peptides: 1,467,651
+   total shared peptides: 21,269
+   total unique peptides: 1,446,382
+   fraction unique: 98.55
+   fraction shared: 1.45
+Some shared peptide data:
+   max copy number: 45 ('jWFQNRR', 45)
+   min copy number: 2
+   median copy number: 2.0
+   average copy number: 2.23
+   upper quartile number: 2
+   lower quartile number: 2
+

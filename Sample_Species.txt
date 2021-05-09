@@ -1,0 +1,26 @@
+Sample	Species
+1	Buffalo
+2	Scimitar horned Oryx
+3	Blackbuck
+4	Ankole 
+5	Blackbuck
+6	Woodmouse
+7	Woodmouse
+8	Ankole 
+9	Red squirrel
+10	Ram
+11	Woodmouse
+12	Lechwe
+13	Field vole
+14	Field vole
+15	Bank Vole
+16	Bank Vole
+17	Ram
+18	Boar
+19	Wild boar x
+20	Field vole
+21	BN Rat
+22	BN Rat
+23	Wistar Rat
+24	Wistar Rat
+ 	
