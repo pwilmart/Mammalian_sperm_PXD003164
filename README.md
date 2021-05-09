@@ -182,41 +182,26 @@ HB_Jan14Sp24|Wistar Rat|Bull|Bovine|U|*3985*|6009|4407|**8297**|6100|3935|3468|3
 
 Generally speaking, the Jack-in-the-box experiment shows that the sample key from the Powerpoint file is more correct than the sample key in the PRIDE archive. `HB_Sp4` suggests that Ankole cattle is not right and this is one of the deers.
 
-
-
 ---
 
-## Extra stuff
+## PSM ID Charts
 
-RAW Name|MS2 Scans|Human IDs
---------|---------|---------
-HB_Sp1|13,989|3,285
-HB_Sp2|17,529|2,705
-HB_Sp4|18,384|3,878
-HB_Sp5|14,695|3,287
-HB_Sp6|17,311|2,262
-HB_Sp7|13,796|1,997
-HB_Sp8|15,611|2,856
-HB_Sp9|18,902|3,215
-HB_Sp10|19,972|3,536
-HB_Sp11|17,948|4,321
-HB_Sp12|19,563|5,081
-HB_Sp13|19,551|3,915
-HB_Sp14|19,272|4,158
-HB_Sp15|18,741|3,514
-HB_Sp16|19,392|3,511
-HB_Sp17|19,524|3,754
-HB_Sp18|19,739|3,169
-HB_Sp19|19,502|3,459
-HB_Sp21|18,723|3,379
-HB_Sp22|18,994|3,316
-HB_Sp23|18,135|2,912
-HB_Sp24|17,041|2,853
-HB_Jan14Sp17|18,409|3,664
-HB_Jan14Sp18|20,432|4,879
-HB_Jan14Sp19|18,527|4,699
-HB_Jan14Sp20|17,680|4,519
-HB_Jan14Sp21|17,498|2,837
-HB_Jan14Sp22|18,614|4,202
-HB_Jan14Sp23|20,701|3,842
-HB_Jan14Sp24|18,978|3,985
+![Sheep Max](images/Slide1.png)
+
+![Cow Max](images/Slide2.png)
+
+![Cow Max](images/Slide3.png)
+
+![Pig Max](images/Slide4.png)
+
+![Horse Max](images/Slide5.png)
+
+![Rat Max](images/Slide6.png)
+
+![Hamster Max](images/Slide7.png)
+
+![Mouse Max](images/Slide8.png)
+
+![Squirrel Max](images/Slide9.png)
+
+---
