@@ -96,7 +96,7 @@ Sample No.|LC_Run|Original PRIDE Key|From Gels PPT
 29|HB_Jan14Sp23|Wistar Rat|Boar
 30|HB_Jan14Sp24|Wistar Rat|Bull
 
-The key from the Powerpoint file has 19 species and they match what is in Table 1 in the paper. The key in the PRIDE archive has only 14 species present. The keys agree except for the last 8 files. We have to sample key choices. What to do? I could flip a coin but I do not have coins in my pockets anymore. The key with 19 species seems more likely. What a conundrum!
+The key from the Powerpoint file has 19 species and they match what is in Table 1 in the paper. The key in the PRIDE archive has only 14 species present. The keys agree except for the last 8 files. We have two sample key choices. What to do? I could flip a coin but I do not have coins in my pockets anymore. The key with 19 species seems more likely. What a conundrum!
 
 Wait a minute. I have the data on my computer. Why not ask the data what species each file is? Is that possible? How would one do that? Here is what I thought. None of the samples are from another commonly studied mammal; namely, humans. Search all of the samples against a canonical human FASTA sequence collection to establish a baseline PSM ID number for each sample. Find an appropriate grid of similar UniProt canonical FASTA sequence collections for as many of the known species as possible and see how the number of PSMs identified at 1% FDR change.
 
@@ -104,7 +104,7 @@ Wait a minute. I have the data on my computer. Why not ask the data what species
 
 ## Species Jack-in-the-box
 
-The idea is that if we have a baseline ID number from a related species that is maybe some similar distance from all of the organisms, then, if we stumble upon a really good FASTA collection, the PSM number will jump out at us like a [Jack-in-the-box](https://en.wikipedia.org/wiki/Jack-in-the-box). Where you can find good FASTA sequence collections is a function of time since that species had its genome sequenced. Initially, you have to look at the big [Publisher's Clearing House](https://en.wikipedia.org/wiki/Publishers_Clearing_House) sequence repositories like NCBI. Genomes eventually get processed with pipelines like RefSeq and then migrate to other sources of sequences like Ensembl. Given that Ensembl has a focus on higher eukaryotic species, most of the organisms in this study would be expected to have Ensembl collections. UniProt is a little different in that it has many life stages of protein sequence collection under one roof. There are computer processed TrEMBL sequences, manually processed sequences (Sprot or Swiss-Prot), combinations of both (proteomes, reference proteomes, and canonical proteomes - all with or without manually curated isoforms). The canonical collections use ortholog relationships to define about 21 thousand proteins (one for each gene) for each species. My preference is the UniProt canonical FASTA sequence collections.
+The idea is that if we have a baseline ID number from a related species that is maybe some similar distance from all of the organisms, then, if we stumble upon a really good FASTA collection, the PSM number will jump out at us like a [Jack-in-the-box](https://en.wikipedia.org/wiki/Jack-in-the-box). Where you look to find good FASTA sequence collections depends on the time since that species had its genome sequenced. Initially, you have to look at the big [Publisher's Clearing House](https://en.wikipedia.org/wiki/Publishers_Clearing_House) sequence repositories like NCBI. Genomes eventually get processed with pipelines like RefSeq and then migrate to other sources of sequences like Ensembl. Given that Ensembl has a focus on higher eukaryotic species, most of the organisms in this study would be expected to have Ensembl sequence collections. UniProt is a little different in that it has many life stages of protein sequence collection under one roof. There are computer processed TrEMBL sequences, manually processed sequences (Sprot or Swiss-Prot), combinations of both (proteomes, reference proteomes, and canonical proteomes - all with or without manually curated isoforms). The canonical collections use ortholog relationships to define about 21 thousand proteins (one for each gene) for each species. My preference is the UniProt canonical FASTA sequence collections.
 
 ---
 
@@ -114,22 +114,22 @@ Here are the databases I found last summer (2020):
 
 Species|Database Source/Type|Version|Proteome/Assembly|Taxon|Sequences|Tryptic Peptides
 -------|--------------------|-------|-----------------|-----|---------|----------------
-Human|UniProt Canonical Reference|2020.04|UP000005640|9606|20600|2327144
-Sheep|UniProt Canonical Reference|2020.04|UP000002356|9940|21217|2253086
-Pig|UniProt Canonical Reference|2020.04|UP000008227|9823|22168|2295149
-Bovine|UniProt Canonical Reference|2020.05|UP000009136|9913|23846|2327616
-Yarkand Deer|Ensembl|v100|CEY_v1|84702|41224|2501626
-Horse|UniProt Canonical Reference|2020.05|UP000002281|9796|20866|2415809
-Rat|UniProt Canonical Reference|2020.04|UP000002494|10116|21587|2230127
-Golden Hamster|UniProt Canonical Reference|2020.05|UP000189706|10036|20469|2269452
-Mouse|UniProt Canonical Reference|2020.04|UP000000589|10090|21989|2343477
-Eurasian Red Squirrel|Ensembl|v100|mSciVul1.1|55149|33234|2316987
-Ensembl_Squirrel|Ensembl|v100|SpeTri2.0|43179|25958|2110951
-Artic_Ground_Squirrel|Ensembl|v100|ASM342692v1|9999|30023|2225017
-Daurian_Ground_Squirrel|Ensembl|v100|ASM240643v1|99837|27607|1993949
-Squirrel|UniProt Canonical Reference|2020.05|UP000005215|43179|18446|2060771
-Siberian_Musk_Deer|Ensembl|v100|MosMos_v2_BIUU_UCD|68415|33292|2340600
-Deer|UniProt Canonical Reference|2020.05|UP000242450|46360|19236|1467651
+Human|UniProt Canonical Reference|2020.04|UP000005640|9606|20,600|2,327,144
+Sheep|UniProt Canonical Reference|2020.04|UP000002356|9940|21,217|2,253,086
+Pig|UniProt Canonical Reference|2020.04|UP000008227|9823|22,168|2,295,149
+Bovine|UniProt Canonical Reference|2020.05|UP000009136|9913|23,846|2,327,616
+Yarkand Deer|Ensembl|v100|CEY_v1|84702|41,224|2,501,626
+Horse|UniProt Canonical Reference|2020.05|UP000002281|9796|20,866|2,415,809
+Rat|UniProt Canonical Reference|2020.04|UP000002494|10116|21,587|2,230,127
+Golden Hamster|UniProt Canonical Reference|2020.05|UP000189706|10036|20,469|2,269,452
+Mouse|UniProt Canonical Reference|2020.04|UP000000589|10090|21,989|2,343,477
+Eurasian Red Squirrel|Ensembl|v100|mSciVul1.1|55149|33,234|2,316,987
+Ensembl_Squirrel|Ensembl|v100|SpeTri2.0|43179|25,958|2,110,951
+Artic_Ground_Squirrel|Ensembl|v100|ASM342692v1|9999|30,023|2,225,017
+Daurian_Ground_Squirrel|Ensembl|v100|ASM240643v1|99837|27,607|1,993,949
+Squirrel|UniProt Canonical Reference|2020.05|UP000005215|43179|18,446|2,060,771
+Siberian_Musk_Deer|Ensembl|v100|MosMos_v2_BIUU_UCD|68415|33,292|2,340,600
+Deer|UniProt Canonical Reference|2020.05|UP000242450|46360|19,236|1,467,651
 
 We have a good span of organisms with the UniProt canonical sequence collections. We will dig a bit deeper into squirrel and deer later. We can see that the Ensembl sequence collections are larger than the UniProt canonical collections. The have more explicit isoform (alternative slicing) content. We will want a consistent data processing framework to compare the searches against the different databases.
 
@@ -145,7 +145,7 @@ I used the [PAW pipeline](https://github.com/pwilmart/PAW_pipeline) that uses th
 * reduced and alkylated Cys residues (static modification)
 * variable oxidized Met modifications
 
-The FASTA files were varied in a series of searches of the half a million spectra. The target/decoy method was used to filter the PSMs passing 1% FDR cutoffs. The PSM counts for a selection of the FASTA sequence collections is shown below. The RAW file names ate listed along with the two possible sample keys. For each row, the FASTA file that had the highest PSM count (highlighted in bold) is tallied (along with the best rodent or ungulate category guess).
+The 16 FASTA files were varied in a series of searches of the half a million spectra (about 8.7 million total spectra scored). The target/decoy method was used to filter the PSMs passing 1% FDR cutoffs. The PSM counts for a selection of the FASTA sequence collections is shown below. The RAW file names ate listed along with the two possible sample keys. For each row, the FASTA file that had the highest PSM count (highlighted in bold) is tallied (along with the best rodent or ungulate category guess).
 
 LC_Run|Original PRIDE Key|From Gels PPT|Guess by Max|U or R Guess|Human|Sheep|Pig|Bovine|Yarkand Deer|Horse|Rat|Golden Hamster|Mouse|Eurasian Red Squirrel
 ------|------------------|---------|------------|------------|-----|-----|---|------|------------|-----|---|--------------|-----|---------------------
@@ -186,7 +186,7 @@ Generally speaking, the Jack-in-the-box experiment shows that the sample key fro
 
 ## PSM ID Charts
 
-Peptide-spectrum-match counts are a relatively unbiased metric to compare. Peptide counts are not as informative and protein counts includes all of the assumptions inherent in protein inference and protein-level error control. We can see some obvious evolutionary patterns in the PSM counts.
+Peptide-spectrum-match counts are a relatively unbiased metric to compare. Peptide counts are not as informative and protein counts includes all of the assumptions inherent in protein inference and protein-level error control. We can see some obvious patterns in the PSM counts.
 
 ![Sheep Max](images/Slide1.png)
 
@@ -222,13 +222,13 @@ The samples (wood mouse) that had maximized PSMs against the mouse FASTA file do
 
 ![Squirrel Max](images/Slide9.png)
 
-There was one squirrel sample and it showed a nice increase in PSM count with the eurasian red squirrel FASTA file. Initially, I tried the UniProt canonical FASTA file for squirrel and was not seeing any jump in PSM counts. I noticed that there were a few squirrel choices at Ensembl, including a more generic "squirrel" collection. The PSM matches are shown below for the different squirrel FASTA files.
+There was one squirrel sample and it showed a nice increase in PSM count with the Eurasian red squirrel FASTA file. Initially, I tried the UniProt canonical FASTA file for squirrel and was not seeing much of a jump in PSM counts. I noticed that there were a few squirrel choices at Ensembl, including a more generic "squirrel" collection. The PSM matches are shown below for the different squirrel FASTA files.
 
 ![Squirrel DBs](images/Slide10.png)
 
-Clearly, getting the right FASTA file to match the sample species can make a huge difference in the results. The situation for the deer samples was similar where many "deer" databases did not seem very good and the Yarkand deer seemed better.
+Clearly, getting the right FASTA file to match the sample species can make a huge difference in the results. The Eurasian red squirrel PSM count is almost double that of the other squirrel protein databases. The situation for the deer samples was similar where many "deer" databases did not seem very good and the Yarkand deer seemed a lot better.
 
-This species screen of the samples shows that many of the species have good enough FASTA sequence collections to have some confidence in the resulting sperm proteomes. Some of the species (voles and wood mouse) do not seem to have sufficiently good FASTA files that were tried here. Some of the more exotic ungulates may be in this category; although sheep and bovine seem closer to other ungulates that the rodents are to each other.
+This protein database "screen" of the samples shows that many of the species have good enough FASTA sequence collections to have some confidence in the resulting sperm proteomes. Some of the species (voles and wood mouse) do not seem to have sufficiently good FASTA files (at least for those tried here). Some of the more exotic ungulates may be in this category; although sheep and bovine seem closer to other ungulates (and may be okay proxies) than the rodents are to each other.
 
 ---
 
@@ -248,17 +248,17 @@ A goal in the 2016 publication was to define a core mammalian sperm proteome. We
 
 When you try and do non-model systems, you can't always find a FASTA sequence collection that seem okay to use. What do you do then? A common approach is to substitute a FASTA collection from a closely related system, the closer the better. The strategy also frequently fails and multi-species sequence collections might be tried. Are any of these strategies any good? How can we tell?
 
-I did 16 different searches with different FASTA files (different species) for the 30 samples from 19 species. We have a few cases where the FASTA file and the sample were the same. We also have **many** cases where samples were searched against related species. We could spend lots of time comparing results lists to see just how robust the sperm proteome really is. We also have another angle. We probably want to take each proper sperm proteome for each species (for the ones where we think we had good protein FASTA files) and map to human orthologs. We also have every sample searched against the human canonical FASTA file. We can compare the human proteins done two ways to see if the proteomes are similar. Human is reasonably close to all of the species and is a very complete proteome.
+I did 16 different searches with different FASTA files (different species) for the 30 samples from 19 species. We have a few cases where the FASTA file and the sample were the same. We also have **many** cases where samples were searched against related species. We could spend lots of time comparing results lists to see just how robust the sperm proteome really is as a function of FASTA file mismatch. We also have another angle. We probably want to take each proper sperm proteome for each species (for the ones where we think we had good protein FASTA files) and map to human orthologs to define a core sperm proteome. We also have every sample searched against the human canonical FASTA file. We can compare the human proteins "done two ways" to see if the proteomes are similar. Human is reasonably close to all of the species and is a very complete proteome.
 
-No matter what strategy we like, we would have to do some work to define a methodology for comparing proteomes. This is much harder to predict than you would imagine. Biology is complex and nature has many alternative ways to get to a similar destination. When you search samples against protein FASTA files that have more divergent sequences because they are not the correct species, you get subset of the identifiable peptides. How robust is the inferred list of proteins to varying degrees of missing peptides? Keep in mind this varies by protein. For example, ubiquitin is identical for all higher eukaryotes and should not be affected by choice of FASTA file. That is one extreme. Missing orthologs is at the other extreme. You do not have a situation where a couple of peptides from each protein get dropped. It is much more dynamic.
+No matter what strategy we like, we would have to do some work to define a methodology for comparing proteomes. Biology is complex and nature has many alternative ways to get to a similar destination. When you search samples against protein FASTA files that have more divergent sequences because they are not the correct species, you get subset of the identifiable peptides. How robust is the inferred list of proteins to varying degrees of missing peptides? This varies by protein, of course. For example, ubiquitin is identical for all higher eukaryotes and should not be affected by choice of FASTA file. That is one extreme. Missing orthologs is at the other extreme. You will not have a situation where a couple of peptides from each protein get dropped across all the proteins. It is much more dynamic.
 
-We are probably all familiar with the basic parsimony case of peptide sets that are subset of larger peptides sets being removed from results. We try to report the smallest list of proteins that can explain (cover) all of the observed peptides. Consider a protein X and another protein that had some of the same peptides (a subset) that we will call X-sub. We would not report X-sub, just X. If we search that data against a different set of FASTA sequences where protein X is missing, we lose the unique peptides to X but have the shared peptides with X-sub. Now it looks like X-sub should be reported. We can have cases like this if one protein database is incomplete or if the genome of a related species lacks a gene for X.
+We are probably all familiar with the basic parsimony case of peptide sets that are subset of larger peptides sets being removed from results (Occam's razor). We try to report the smallest list of proteins that can explain (cover) all of the observed peptides. Consider a protein `X` and another protein that had some of the same peptides (a subset) that we will call `X-sub`. We would not report `X-sub`, just `X`. If we search that data against a different set of FASTA sequences where protein `X` is missing, we lose the unique peptides to `X` but have the shared peptides with `X-sub`. Now it looks like `X-sub` should be reported. We can have cases like this if one protein database is incomplete or if the genome of a related species lacks a gene for `X`.
 
-This potential for inferred protein scrambling is, of course, complicated and varies by protein sets. We number of peptides shared between proteins X and X-sub might be large. That happens in many housekeeping protein families. We can have the intermediate case where the shared peptides are not so many. Then proteins X and X-sub can be more different. We can also have cases where there are few shared peptides (conserved motifs and domains) and then proteins X and X-sub may be quite different. The best way to have robust protein inference is to have as many peptides to work with as possible.
+This potential for inferred protein scrambling is, of course, complicated and varies by protein sets. The number of peptides shared between proteins `X` and `X-sub` might be large. That happens in many housekeeping protein families. Then `X` and `X-sub` may be very similar proteins. We can have the intermediate case where the shared peptides are not so many. Then proteins `X` and `X-sub` can be more different. We can also have cases where there are few shared peptides (conserved motifs and domains) and then proteins `X` and `X-sub` may be quite different. The best way to have robust protein inference is to have as many peptides to work with as possible.
 
-Rat is an interesting species to play with if this topic interests you. There are about 8000 Swiss-Prot sequences for rat. This is quite few proteins but far short of the 21K sequence count for the canonical rat database. You can find many interesting rat samples in data archives to play with. Tear is a fun one. There are tons of data, no doubt. Do searches with just the Swss-Prot sequences compared to the canonical sequences to see how variable the list of inferred proteins can be.
+Rat is an interesting species to play with if this topic interests you. There are about 8000 Swiss-Prot sequences for rat. This is quite few proteins, but far short of the 21K sequence count for the canonical rat database. You can find many interesting rat samples in data archives to play with. Tear is a fun one. There are tons of data, no doubt. Do searches with just the Swss-Prot sequences compared to the canonical sequences to see how variable the list of inferred proteins can be.
 
-To get valid proteins in shotgun proteomics experiments you need two things: a pretty complete protein database and protein database sequences that have peptide sequences that match most of the actual peptides in your sample. Coming up short on either of those requirements has more severe consequences than you realize. Older papers with results from poor databases (incomplete or not for the correct species) are not really worth much for global results. Most papers focus on specific proteins and those may be fine. I would be very leery of any big table of identified proteins being very accurate. This might be the best argument for data repositories. The RAW data (up to some point) will be fine to re-analyze with proper protein FASTA sequence collections to get more correct protein lists. The original publication analyses of their original results may not be too relevant to the re-analysis (depending on how bad the original protein database was).
+To get valid proteins in shotgun proteomics experiments you need two things: a pretty complete protein database and protein database sequences that have peptide sequences that match most of the actual peptides in your sample. Coming up short on either of those requirements has more severe consequences than you realize. Older papers with results from poor databases (incomplete or not for the correct species) are not really worth much for global results. Most papers focus on specific proteins and those may be fine. I would be very leery of any big table of identified proteins being very accurate. This might be the best argument for data repositories. The RAW data (up to some point) will be fine to re-analyze with proper protein FASTA sequence collections to get more correct protein lists. The original publication analyses and interpretations of their original results may not be too relevant to the re-analysis (depending on how bad the original protein databases were).
 
 ---
 
