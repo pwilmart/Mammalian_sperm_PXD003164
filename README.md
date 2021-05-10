@@ -186,22 +186,84 @@ Generally speaking, the Jack-in-the-box experiment shows that the sample key fro
 
 ## PSM ID Charts
 
+Peptide-spectrum-match counts are a relatively unbiased metric to compare. Peptide counts are not as informative and protein counts includes all of the assumptions inherent in protein inference and protein-level error control. We can see some obvious evolutionary patterns in the PSM counts.
+
 ![Sheep Max](images/Slide1.png)
+
+The samples with sheep as the FASTA file that maximized PSM IDs (above) show that sheep, cows, and deer are closely related. Pig and horse are more distant but have more PSMs than any of the rodent databases.
 
 ![Cow Max](images/Slide2.png)
 
-![Cow Max](images/Slide3.png)
+The pattern for the samples with bovine as the maximum (above) is similar to what we saw for sheep. We do get significantly higher PSM counts for these samples with bovine compared to sheep or deer.
+
+![Deer Max](images/Slide3.png)
+
+The pattern for the samples with deer as the maximum (above) is similar to what we saw for sheep and cow. We do get significantly higher PSM counts for these samples with deer compared to sheep or cow.
 
 ![Pig Max](images/Slide4.png)
 
+The samples with pig as the maximum PSM count nicely illustrate the Jack-in-the-box effect by clearly standing out from the other species. We can also see that getting the species and the FASTA collection correctly matched up can really increase the PSM counts.
+
 ![Horse Max](images/Slide5.png)
+
+There was one Zebra sample and its PSM count is much higher with the horse FASTA file.
 
 ![Rat Max](images/Slide6.png)
 
+The samples with rat as the FASTA file that maximized the PSM counts is interesting (at least to me). We see a large increase with rat compared to the other species. Rat seems to get a bit higher PSM counts for other rodents compared to ungulates (but not by that much). The differences between rat and mouse are larger than I would have guessed.
+
 ![Hamster Max](images/Slide7.png)
+
+The four vole samples had maximum PSM counts for the hamster FASTA file. Hamster edges out rat or mouse. The small increase suggests that we still need a better sequence collection than hamster for the voles.
 
 ![Mouse Max](images/Slide8.png)
 
+The samples (wood mouse) that had maximized PSMs against the mouse FASTA file do not pop out like rat did. Maybe all mice are not the same? The data suggests that the common laboratory mouse strain is not really a great FASTA sequence collection for wood mouse.
+
 ![Squirrel Max](images/Slide9.png)
 
+There was one squirrel sample and it showed a nice increase in PSM count with the eurasian red squirrel FASTA file. Initially, I tried the UniProt canonical FASTA file for squirrel and was not seeing any jump in PSM counts. I noticed that there were a few squirrel choices at Ensembl, including a more generic "squirrel" collection. The PSM matches are shown below for the different squirrel FASTA files.
+
+![Squirrel DBs](images/Slide10.png)
+
+Clearly, getting the right FASTA file to match the sample species can make a huge difference in the results. The situation for the deer samples was similar where many "deer" databases did not seem very good and the Yarkand deer seemed better.
+
+This species screen of the samples shows that many of the species have good enough FASTA sequence collections to have some confidence in the resulting sperm proteomes. Some of the species (voles and wood mouse) do not seem to have sufficiently good FASTA files that were tried here. Some of the more exotic ungulates may be in this category; although sheep and bovine seem closer to other ungulates that the rodents are to each other.
+
 ---
+
+## What about the proteins?
+
+If any real biologists are still reading, you are wondering where is the biology? I do data analysis tools not biology. My concern is whether or not the list of proteins and peptides I can produce bear some resemblance to reality. There are so many ways to produce biased results that might seem okay but can, in fact, be quite misleading. Consider the last figure above. Would I get a reliable sperm proteome for squirrel if I used any of the four FASTA files that give about half as many PSMs? What is being lost? How accurate is a partial view of a proteome?
+
+We already see above that we have many species with (what seem to be) good FASTA files. We can take those identified peptides and make our protein lists. The protein inference step is very important and has direct dependancies on the choice of FASTA file. Basic protein inference with canonical UniProt databases and with larger, more complete Ensembl databases will not give you protein results that are as similar as your might think. You need to add extended parsimony logic to group together highly homologous protein families. When you want to compare protein lists between species you need to be comparing things at the gene level, not at some variable "gene product" level. You need to start with comparing the big picture. You can always refine your comparison with additional analyses of existing data or by doing additional informed experiments.
+
+The basic strategy for comparing the sperm proteomes would be getting the "parts lists" for the species where we think we have good FASTA sequence collections so that the parts lists are valid. The only organisms with any reasonable knowledge of the proteins (structure, function, disease implications, literature) for higher eukaryotes are human and mouse. We do not have a National Institute of Mice Health, so human is really the only game in town. I talk about tools to take proteomics results from non-model systems and map them to proteins in better studied model systems in [this blog post](https://pwilmart.github.io/blog/2019/10/14/orthologs-annotations).
+
+A goal in the 2016 publication was to define a core mammalian sperm proteome. We could do that here by mapping the different species results to their human orthologs. We could see what proteins are seen in all species, if there are any differences between ungulate and rodent proteins, or if any species seem to have some unique proteins. I do not have time to do any of that. Comparing proteomes is not such an easy thing to define. In under-sampled tryptic digests, there will always be a moderate number of low abundance protein IDs that are more stochastic. Those proteins do not align across species and can distract from the real biology. You almost always need to add some quantitative dimension to the comparison to try and weed out this low abundance background. This is a lot of hard work with a lot of grey areas that take deep domain knowledge to navigate. Despite any claims to the contrary, there is probably **not** an R package that does this for you.
+
+---
+
+## The ugly side no one talks about
+
+When you try and do non-model systems, you can't always find a FASTA sequence collection that seem okay to use. What do you do then? A common approach is to substitute a FASTA collection from a closely related system, the closer the better. The strategy also frequently fails and multi-species sequence collections might be tried. Are any of these strategies any good? How can we tell?
+
+I did 16 different searches with different FASTA files (different species) for the 30 samples from 19 species. We have a few cases where the FASTA file and the sample were the same. We also have **many** cases where samples were searched against related species. We could spend lots of time comparing results lists to see just how robust the sperm proteome really is. We also have another angle. We probably want to take each proper sperm proteome for each species (for the ones where we think we had good protein FASTA files) and map to human orthologs. We also have every sample searched against the human canonical FASTA file. We can compare the human proteins done two ways to see if the proteomes are similar. Human is reasonably close to all of the species and is a very complete proteome.
+
+No matter what strategy we like, we would have to do some work to define a methodology for comparing proteomes. This is much harder to predict than you would imagine. Biology is complex and nature has many alternative ways to get to a similar destination. When you search samples against protein FASTA files that have more divergent sequences because they are not the correct species, you get subset of the identifiable peptides. How robust is the inferred list of proteins to varying degrees of missing peptides? Keep in mind this varies by protein. For example, ubiquitin is identical for all higher eukaryotes and should not be affected by choice of FASTA file. That is one extreme. Missing orthologs is at the other extreme. You do not have a situation where a couple of peptides from each protein get dropped. It is much more dynamic.
+
+We are probably all familiar with the basic parsimony case of peptide sets that are subset of larger peptides sets being removed from results. We try to report the smallest list of proteins that can explain (cover) all of the observed peptides. Consider a protein X and another protein that had some of the same peptides (a subset) that we will call X-sub. We would not report X-sub, just X. If we search that data against a different set of FASTA sequences where protein X is missing, we lose the unique peptides to X but have the shared peptides with X-sub. Now it looks like X-sub should be reported. We can have cases like this if one protein database is incomplete or if the genome of a related species lacks a gene for X.
+
+This potential for inferred protein scrambling is, of course, complicated and varies by protein sets. We number of peptides shared between proteins X and X-sub might be large. That happens in many housekeeping protein families. We can have the intermediate case where the shared peptides are not so many. Then proteins X and X-sub can be more different. We can also have cases where there are few shared peptides (conserved motifs and domains) and then proteins X and X-sub may be quite different. The best way to have robust protein inference is to have as many peptides to work with as possible.
+
+Rat is an interesting species to play with if this topic interests you. There are about 8000 Swiss-Prot sequences for rat. This is quite few proteins but far short of the 21K sequence count for the canonical rat database. You can find many interesting rat samples in data archives to play with. Tear is a fun one. There are tons of data, no doubt. Do searches with just the Swss-Prot sequences compared to the canonical sequences to see how variable the list of inferred proteins can be.
+
+To get valid proteins in shotgun proteomics experiments you need two things: a pretty complete protein database and protein database sequences that have peptide sequences that match most of the actual peptides in your sample. Coming up short on either of those requirements has more severe consequences than you realize. Older papers with results from poor databases (incomplete or not for the correct species) are not really worth much for global results. Most papers focus on specific proteins and those may be fine. I would be very leery of any big table of identified proteins being very accurate. This might be the best argument for data repositories. The RAW data (up to some point) will be fine to re-analyze with proper protein FASTA sequence collections to get more correct protein lists. The original publication analyses of their original results may not be too relevant to the re-analysis (depending on how bad the original protein database was).
+
+---
+
+Thanks for reading!
+
+Phil Wilmarth
+
+May 9th, 2021.
