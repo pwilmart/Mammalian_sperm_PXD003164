@@ -4,7 +4,7 @@
 
 ## Publication Summary
 
-Comparative cross-species proteomics experiments are really nice applications of modern shotgun proteomics methods. Proteomics is really driven by the quality and availability of protein sequence collections. These files in [FASTA format](https://en.wikipedia.org/wiki/FASTA_format) are often called protein databases. If you want some fun on Twitter, raise the question of whether or not such simple files call really be called "databases". The World is full of molehills you should not die on and this is one of those.
+Comparative cross-species proteomics experiments are really nice applications of modern shotgun proteomics methods. Proteomics is really driven by the quality and availability of protein sequence collections. These files in [FASTA format](https://en.wikipedia.org/wiki/FASTA_format) are often called protein databases. If you want some fun on Twitter, raise the question of whether or not such simple files can really be called "databases". The World is full of molehills you should not die on and this is one of those.
 
 Protein FASTA files have many sources (NCBI, Ensembl, UniProt, and many more) and their quality (and completeness) can be variable. Even agreeing on definitions of quality and completeness can be challenging. One thing that is not up for debate (if you still believe in facts and reality) is that we are drowning in protein sequences and we are just getting warmed up. I am sure several new genomes have been sequenced since you started reading this.
 
