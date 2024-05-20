@@ -8,7 +8,7 @@ Comparative cross-species proteomics experiments are really nice applications of
 
 Protein FASTA files have many sources (NCBI, Ensembl, UniProt, and many more) and their quality (and completeness) can be variable. Even agreeing on definitions of quality and completeness can be challenging. One thing that is not up for debate (if you still believe in facts and reality) is that we are drowning in protein sequences and we are just getting warmed up. I am sure several new genomes have been sequenced since you started reading this.
 
-You really live in a bubble if you only work on a few of the well-studied model organisms. Things get real real fast when you start running roadkill samples in your core facility. Some fun public data on sperm proteomics can be found in this [2016 publication](https://www.sciencedirect.com/science/article/pii/S1874391915302268?casa_token=U1aH0XaOMrcAAAAA:rBzFrvBJKeuoaxCJ7vI2kJpLiIeIvAzG7u7bnKCEBCRKDuSQv698HvLSbNxOs5_mmRiNnamD):    
+You really live in a bubble if you only work on a few of the well-studied model organisms. Things get "real" real fast when you start running roadkill samples in your core facility. Some fun public data on sperm proteomics can be found in this [2016 publication](https://www.sciencedirect.com/science/article/pii/S1874391915302268?casa_token=U1aH0XaOMrcAAAAA:rBzFrvBJKeuoaxCJ7vI2kJpLiIeIvAzG7u7bnKCEBCRKDuSQv698HvLSbNxOs5_mmRiNnamD):    
 
 > Bayram, H.L., Claydon, A.J., Brownridge, P.J., Hurst, J.L., Mileham, A., Stockley, P., Beynon, R.J. and Hammond, D.E., 2016. Cross-species proteomics in analysis of mammalian sperm proteins. Journal of proteomics, 135, pp.38-50.
 
