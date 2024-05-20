@@ -131,7 +131,7 @@ Squirrel|UniProt Canonical Reference|2020.05|UP000005215|43179|18,446|2,060,771
 Siberian_Musk_Deer|Ensembl|v100|MosMos_v2_BIUU_UCD|68415|33,292|2,340,600
 Deer|UniProt Canonical Reference|2020.05|UP000242450|46360|19,236|1,467,651
 
-We have a good span of organisms with the UniProt canonical sequence collections. We will dig a bit deeper into squirrel and deer later. We can see that the Ensembl sequence collections are larger than the UniProt canonical collections. The have more explicit isoform (alternative slicing) content. We will want a consistent data processing framework to compare the searches against the different databases.
+We have a good span of organisms with the UniProt canonical sequence collections. We will dig a bit deeper into squirrel and deer later. We can see that the Ensembl sequence collections are larger than the UniProt canonical collections. They have more explicit isoform (alternative slicing) content. We will want a consistent data processing framework to compare the searches against the different databases.
 
 ---
 
